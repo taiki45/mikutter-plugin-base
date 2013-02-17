@@ -24,6 +24,7 @@ Finally execute mikkuter with bundled gems:
 
 ```ruby
 # path/to/mikutter/plugin/dir/sample.rb
+require 'mikutter_plugin_base'
 
 class Sample < Mikutter::PluginBase
   def run(plugin)
