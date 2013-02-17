@@ -1,17 +1,22 @@
-require "mikutter_plugin_base/version"
+# -*- coding: utf-8 -*-
+require 'active_support/inflector'
+require 'mikutter_plugin_base/version'
 
 module Mikutter
   class PlugingBase
     class << self
       def register!
-        name = self.class.to_s.downcase.to_sym
         instance = new
         procedure = lambda do |plugin|
           instance.method(:run).to_proc.call(
             instance.method(:add_events).to_proc.call(plugin)
           )
         end
-        ::Plugin.create name, &procedure
+        ::Plugin.create to_plugin_name(self.class.to_s), &procedure
+      end
+
+      def to_plugin_name(class_name)
+        class_name.underscore.to_sym
       end
     end
 
