@@ -4,7 +4,7 @@ Add new way to write mikutter plugin.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this line to your mikutter's Gemfile:
 
     gem 'mikutter_plugin_base'
 
@@ -15,6 +15,10 @@ And then execute:
 Or install it yourself as:
 
     $ gem install mikutter_plugin_base
+
+Finally execute mikkuter with bundled gems:
+
+    $ bundle exec ruby mikkuter.rb
 
 ## Usage
 
