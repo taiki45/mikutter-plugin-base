@@ -19,7 +19,8 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-#path/to/mikutter/plugin/dir/sample.rb
+# path/to/mikutter/plugin/dir/sample.rb
+
 class Sample < Mikutter::PluginBase
   def run(plugin)
     "write your code here."
