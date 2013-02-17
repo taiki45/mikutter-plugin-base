@@ -8,7 +8,7 @@ Gem::Specification.new do |gem|
   gem.version       = MikutterPluginBase::VERSION
   gem.authors       = ["Taiki ONO"]
   gem.email         = ["taiks.4559@gmail.com"]
-  gem.description   = %q{Write mikutter plugin using module system.}
+  gem.description   = %q{Write mikutter plugin using module system like Sinatra.}
   gem.summary       = %q{Add new way to write mikutter plugin.}
   gem.homepage      = "http://taiki45.github.com/mikutter-plugin-base/"
 
