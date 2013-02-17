@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["taiks.4559@gmail.com"]
   gem.description   = %q{Write mikutter plugin using module system.}
   gem.summary       = %q{Add new way to write mikutter plugin.}
-  gem.homepage      = ""
+  gem.homepage      = "http://taiki45.github.com/mikutter-plugin-base/"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
