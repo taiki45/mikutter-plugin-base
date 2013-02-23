@@ -3,7 +3,7 @@ require 'active_support/inflector'
 require 'mikutter_plugin_base/version'
 
 module Mikutter
-  class PlugingBase
+  class PluginBase
     class << self
       def register!
         instance = new
