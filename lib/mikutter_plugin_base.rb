@@ -26,7 +26,7 @@ module Mikutter
         when /^on_?(.+)$/
           plugin.add_event $1, &method(name).to_proc
         when /^filter_?(.+)$/
-          plugin.add_filter $1, &method(name).to_proc
+          plugin.add_event_filter $1, &method(name).to_proc
         when /^hook_?(.+)$/
           plugin.add_event_hook $1, &method(name).to_proc
         end
