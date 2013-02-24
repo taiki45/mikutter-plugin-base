@@ -42,6 +42,39 @@ end
 Sample.register!
 ```
 
+## Detail
+This gem just convert your plugin code.
+
+Plugin like this code goes...
+```ruby
+class SamplePlugin < Mikutter::PluginBase
+  def run(plugin)
+    @data_store = setup
+  end
+
+  def on_update(service, messages)
+    messages.each do |msg|
+      @data_store.save msg
+    end
+  end
+end
+
+SamplePlugin.register!
+```
+
+like this.
+```ruby
+Plugin.create :sample_plugin do |plugin|
+  @data_store = setup
+
+  on_update do |service, messages|
+    messages.each do |msg|
+      @data_store.save msg
+    end
+  end
+end
+```
+
 ## Contributing
 
 1. Fork it
